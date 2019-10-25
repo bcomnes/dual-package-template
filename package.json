@@ -29,6 +29,6 @@
     "test": "run-s test:*",
     "test:deps": "dependency-check . --no-dev --no-peer",
     "test:standard": "standard",
-    "test:tape": "tape -r esm" test.js"
+    "test:tape": "tape -r esm test.js"
   }
 }
