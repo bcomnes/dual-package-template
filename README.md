@@ -11,7 +11,7 @@ npm install {{name}}
 ## Usage
 
 ``` js
-const {{name}} = require('{{name}}')
+import { {{name}} } from '{{name}}'
 ```
 
 ## License
