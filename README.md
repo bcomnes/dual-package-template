@@ -1,5 +1,6 @@
 # {{name}}
-[![Actions Status](https://github.com/little-core-labs/tiny-module-compiler/workflows/tests/badge.svg)](https://github.com/little-core-labs/tiny-module-compiler/actions)
+[![Actions Status](https://github.com/bcomnes/{{name}}/workflows/tests/badge.svg)](https://github.com/bcomnes/{{name}}/actions)
+[![Exports](https://img.shields.io/badge/exports-esm-blue)](https://github.com/standard-things/esm)
 
 WIP - nothing to see here
 
