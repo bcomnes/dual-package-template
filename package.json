@@ -38,7 +38,9 @@
     "test:deps": "dependency-check package.json --no-dev --no-peer",
     "test:standard": "standard",
     "test:tap": "tap --no-esm --jobs=1",
-    "version": "auto-changelog -p --template keepachangelog auto-changelog --breaking-pattern 'BREAKING CHANGE:' && git add CHANGELOG.md cjs"
+    "version": "run-s prepare version:*",
+    "version:01:changelog": "auto-changelog -p --template keepachangelog auto-changelog --breaking-pattern 'BREAKING CHANGE:'",
+    "version:02:git": "git add CHANGELOG.md cjs"
   },
   "standard": {
     "ignore": [
