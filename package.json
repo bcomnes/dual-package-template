@@ -26,7 +26,6 @@
   "homepage": "https://github.com/bcomnes/{{name}}",
   "keywords": [],
   "license": "MIT",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/bcomnes/{{name}}.git"
@@ -36,14 +35,15 @@
     "prepare": "npm run build",
     "prepublishOnly": "git push --follow-tags && gh-release",
     "test": "run-s build test:*",
-    "test:deps": "dependency-check . --no-dev --no-peer",
+    "test:deps": "dependency-check package.json --no-dev --no-peer",
     "test:standard": "standard",
     "test:tap": "tap --no-esm --jobs=1",
     "version": "auto-changelog -p --template keepachangelog auto-changelog --breaking-pattern 'BREAKING CHANGE:' && git add CHANGELOG.md cjs"
   },
-  "semistandard": {
+  "standard": {
     "ignore": [
-      "dist"
+      "dist",
+      "cjs"
     ]
   },
   "funding": {
