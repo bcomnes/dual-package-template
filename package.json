@@ -15,7 +15,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "ascjs": "^4.0.0",
+    "ascjs": "^5.0.0",
     "npm-run-all2": "^5.0.0",
     "dependency-check": "^4.1.0",
     "standard": "^16.0.0",
