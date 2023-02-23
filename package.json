@@ -23,7 +23,8 @@
     "tap": "^16.0.0",
     "gh-release": "^7.0.0",
     "mkdirp": "^2.0.0",
-    "rimraf": "^4.0.4"
+    "rimraf": "^4.0.4",
+    "c8": "^7.10.0"
   },
   "homepage": "https://github.com/bcomnes/{{name}}",
   "keywords": [],
@@ -39,7 +40,7 @@
     "test": "run-s build test:*",
     "test:deps": "dependency-check package.json --no-dev --no-peer",
     "test:standard": "standard",
-    "test:tap": "tap --no-check-coverage --jobs=1",
+    "test:tap": "METRICS=0 c8 tap --no-coverage --color",
     "version": "run-s prepare version:*",
     "version:changelog": "auto-changelog -p --template keepachangelog auto-changelog --breaking-pattern 'BREAKING CHANGE:'",
     "version:git": "git add CHANGELOG.md cjs"
@@ -53,5 +54,11 @@
   "funding": {
     "type": "individual",
     "url": "https://github.com/sponsors/bcomnes"
+  },
+  "c8": {
+    "reporter": [
+      "lcov",
+      "text"
+    ]
   }
 }
