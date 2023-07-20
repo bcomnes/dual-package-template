@@ -1,7 +1,7 @@
-import tap from 'tap'
+import test from 'node:test'
+import assert from 'node:assert'
 import { foo } from './index.js'
 
-tap.test('exports', async (t) => {
-  t.ok(foo)
-  t.equal(foo.bar, 'baz', 'exports as expected')
+test('index export', async (t) => {
+  assert.strictEqual(foo.bar, 'baz', 'exports as expected')
 })
