@@ -34,7 +34,7 @@
   "scripts": {
     "build": "rm -rf cjs && mkdir -p cjs && ascjs esm cjs",
     "prepare": "npm run build",
-    "prepublishOnly": "git push --follow-tags && gh-releas -y",
+    "prepublishOnly": "git push --follow-tags && gh-release -y",
     "test": "run-s build test:*",
     "test:deps": "dependency-check package.json --no-dev --no-peer",
     "test:standard": "standard",
