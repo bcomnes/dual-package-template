@@ -16,7 +16,7 @@
   "dependencies": {},
   "devDependencies": {
     "ascjs": "^6.0.2",
-    "npm-run-all2": "^6.0.0",
+    "npm-run-all2": "^7.0.0",
     "dependency-check": "^4.1.0",
     "standard": "^17.0.0",
     "auto-changelog": "^2.0.0",
